@@ -19,11 +19,13 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
       contributionCalendar {
         totalContributions
         weeks {
+          firstDay
           contributionDays {
             date
             contributionCount
             contributionLevel
             color
+            weekday
           }
         }
         months {
@@ -139,7 +141,12 @@ def month_positions(calendar, x_start, cell_size, gap):
         matching_week = None
 
         for index, week in enumerate(calendar["weeks"]):
-            if week["firstDay"] <= first_day:
+            week_first = week.get("firstDay") or (
+                week["contributionDays"][0]["date"]
+                if week.get("contributionDays") else ""
+            )
+
+            if week_first <= first_day:
                 matching_week = index
             else:
                 break
@@ -161,16 +168,12 @@ def month_positions(calendar, x_start, cell_size, gap):
 
 
 def generate_svg(calendar):
-    days = build_days(calendar)
-
     total = calendar["totalContributions"]
 
     width = 1000
     height = 300
 
     bg = "#0d1117"
-    primary = "#f0f6fc"
-    secondary = "#8b949e"
     border = "#30363d"
 
     x_start = 40
@@ -273,8 +276,10 @@ def generate_svg(calendar):
         ("Fri", 5),
     ]
 
-    for label, weekday in weekdays:
-        y = y_start + (weekday - 1) * week_width + 10
+    for label, weekday_idx in weekdays:
+        # Row 0 = Mon, Row 2 = Wed, Row 4 = Fri
+        row = (weekday_idx + 6) % 7
+        y = y_start + row * week_width + 10
 
         svg.append(
             f'<text x="8" y="{y}" class="weekday">'
@@ -301,15 +306,17 @@ def generate_svg(calendar):
     for index, week in enumerate(calendar["weeks"]):
         for day in week["contributionDays"]:
 
-            weekday = day["weekday"]
+            weekday = day.get("weekday", 0)
+            # Map Mon(1)->0, Tue(2)->1, ..., Sun(0)->6
+            row = (weekday + 6) % 7
 
             x = x_start + index * week_width
-            y = y_start + (weekday - 1) * week_width
+            y = y_start + row * week_width
 
             color = day["color"]
             count = day["contributionCount"]
 
-            delay = (index * 0.018) + (weekday * 0.008)
+            delay = (index * 0.018) + (row * 0.008)
 
             tooltip = (
                 f'{count} contribution'
