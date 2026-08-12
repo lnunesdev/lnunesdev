@@ -22,16 +22,24 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,react,ts,git,github,vscode,figma" alt="Tecnologias e ferramentas" />
 </p>
 
+### 📊 Atividade no GitHub
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lnunesdev/lnunesdev/main/assets/activity.svg" alt="Gráfico de atividade no GitHub" width="100%">
+</p>
+
 ### 📫 Contato
 
 <p align="left">
-</a>
   <a href="mailto:dev.lucasnunescoelho@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
+
   <a href="https://www.instagram.com/i_ocoelho" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/>
   </a>
+
   <a href="https://www.linkedin.com/in/lucasnunescoelho/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
 </p>
