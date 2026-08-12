@@ -25,7 +25,7 @@
 ### 📊 Atividade no GitHub
 
 <p align="center">
-  <img src="./assets/activity.svg" alt="Gráfico de atividade no GitHub" width="100%">
+  <img src="https://raw.githubusercontent.com/lnunesdev/lnunesdev/main/assets/activity.svg?v=1" alt="Gráfico de atividade no GitHub" width="100%">
 </p>
 
 ### 📫 Contato
