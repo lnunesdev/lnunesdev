@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000"
+     height="300"
+     viewBox="0 0 1000 300">
+
+  <rect
+    width="1000"
+    height="300"
+    rx="16"
+    fill="#0d1117"
+    stroke="#30363d"
+  />
+
+  <text
+    x="40"
+    y="40"
+    fill="#f0f6fc"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="21"
+    font-weight="600">
+    GitHub Activity
+  </text>
+
+  <text
+    x="40"
+    y="65"
+    fill="#8b949e"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="13">
+    lnunesdev • activity loading...
+  </text>
+
+  <text
+    x="40"
+    y="145"
+    fill="#8b949e"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="14">
+    Updating GitHub activity...
+  </text>
+
+</svg>
