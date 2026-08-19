@@ -77,10 +77,6 @@
 <text x="696" y="91" class="month">Jun</text>
 <text x="760" y="91" class="month">Jul</text>
 <text x="824" y="91" class="month">Aug</text>
-<g transform="translate(40,121)">
-<title>0 contributions on 2025-08-19</title>
-<rect class="day animated" x="0" y="0" width="12" height="12" rx="3" fill="#ebedf0" style="animation-delay:0.008s" />
-</g>
 <g transform="translate(40,137)">
 <title>0 contributions on 2025-08-20</title>
 <rect class="day animated" x="0" y="0" width="12" height="12" rx="3" fill="#ebedf0" style="animation-delay:0.016s" />
@@ -1540,6 +1536,10 @@
 <g transform="translate(872,137)">
 <title>0 contributions on 2026-08-19</title>
 <rect class="day animated" x="0" y="0" width="12" height="12" rx="3" fill="#ebedf0" style="animation-delay:0.952s" />
+</g>
+<g transform="translate(872,153)">
+<title>0 contributions on 2026-08-20</title>
+<rect class="day animated" x="0" y="0" width="12" height="12" rx="3" fill="#ebedf0" style="animation-delay:0.960s" />
 </g>
 <text x="40" y="235" class="subtitle">Less</text>
 <rect x="75" y="224" width="13" height="13" rx="3" fill="#161b22" />
